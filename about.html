@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>About Karen Bala based in Boston</title>
+    <!-- add normalize below -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- below Poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- below setting the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body id="contact-page">
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
@@ -32,7 +41,8 @@
     </header>
 
     <div>
-      <main><!-- Title Page -->
+      <main style="background-color:#cf4900;color:#1b1b1b;padding:20px">
+      <!-- Title Page -->
         <h1>Welcome, I am Karen Bala.</h1>
       </main>
       <div><!-- KB image -->
@@ -42,20 +52,21 @@
           <img src="img/about-me/kb-1200px.jpg" alt="Karen Bala UX Designer">
         </picture>
       </div><!-- end of KB image -->
-      <div><!-- My Story in Text -->
+      <div id="mystory"><!-- My Story in Text -->
         <h2>My Story</h2>
-        <p>I am a UX designer with a background in architecture.<br>
-          What has been my professional journey?<br>
-          I studied architecture at the University of Florida with a focus on design theory.  Those formative years taught me to research, think and share conceptual ideas with my colleagues. I am still using these critical tools today.
-	        Years in professional practice honed my collaborative approach with team members and clients. Aligning a client’s business goals with a well-designed product for their end-users creates a powerful solution for most businesses to succeed.<br>
-          Where am I if I am not in front of my computer?<br>
+        <p>I am a UX designer with a background in architecture.</p>
+        <p>What has been my professional journey?<br>
+        I studied architecture at the University of Florida with a focus on design theory.  Those formative years taught me to research, think and share conceptual ideas with my colleagues. I am still using these critical tools today.   
+	      Years in professional practice honed my collaborative approach with team members and clients. Aligning a client’s business goals with a well-designed product for their end-users creates a powerful solution for most businesses to succeed.
+        </p>
+        <p>Where am I if I am not in front of my computer?<br>
           I have a strong love for being in the water, either ocean swimming, paddleboarding, or sea kayaking, especially on the Maine coast. I have had a long journey to get into the water. I started learning how to swim as an adult in a short-length pool at the 23rd Street Y in New York City, which is not easy, but the joy that the ocean brings me was worth busting through the fear.
         </p>
-        <a target="blank" href="files/kb-resume.pdf"> View Resume </a>
+        <a target="blank" href="files/kb-resume.pdf" class="button"> View Resume </a>
       </div><!-- End of My Story Text -->
       <div><!-- Frist Column Relevant Skills-->
         <h2>Skills and Tools</h2>
-        <h3>Relevant Skills</h3>
+        <h4>Relevant Skills</h4>
         <ul>
           <li>User Experience</li>
           <li>Front End Development</li>
@@ -63,7 +74,7 @@
         </ul>
       </div>
       <div><!--Second Column Tools I Use -->
-        <h3>Tools I Use</h3>
+        <h4>Tools I Use</h4>
         <ul>
           <li>Handsketching</li>
           <li>Figma</li>
@@ -85,7 +96,7 @@
           an email?
         </p>
       <div>
-        <a href="mailto:info@karenbala.com">Email me</a>
+        <a href="mailto:info@karenbala.com" class="button contact">Email me</a>
       </div>
       <div><!-- Social Media Layout and Placeholders -->
         <a href="https://www.linkedin.com/in/karenbala/" target="_blank">
