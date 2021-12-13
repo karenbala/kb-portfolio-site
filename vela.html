@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Vela, a weather app.</title>
+    <!-- add normalize below -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- below Poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- below setting the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body id="contact-page">
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
@@ -214,8 +223,305 @@
           <p>User Persona: Nori Yosaku</p>
         </div><!-- end of persona, ab image and text -->
       </div><!-- end of Define User Personas Section-->
+
+      <div><!-- Ideate User Journeys section -->
+        <div>
+          <!--Section text-->
+          <span>Ideate</span>
+          <p>User Journeys</p>
+        </div><!-- end of section text -->
+
+        <div><!-- AB column with text and user journey image and caption-->
+          <div><!-- column w AB text-->
+            <h3>Aileen wants to play in the water.</h3>
+            <p>Emphathizing with busy users connects the importance of a quick glance on a customized homescreen. Constantly, users are
+            making quick decisions. The two points of confirmation: customized homescreen and play alerts helps a user like Aileen
+            make better decisions.</p>
+          </div><!-- end column w AB text-->
+          <div>
+            <!-- AB user journey image and text -->
+            <picture>
+              <!--AB uj image -->
+              <source srcset="img/vela/vela-600px/ab-uj-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/ab-uj-1200px.jpeg" alt="User Persona AB">
+            </picture>
+            <p>User Persona: Aileen Butler</p>
+          </div><!-- end of AB uj image and text -->
+        </div><!-- end of AB column with text and user journey image and caption-->
+
+        <div>
+          <!-- NY column with text and user journey image and caption-->
+          <div>
+            <!-- column w NY text-->
+            <h3>Nori wants to plan a water trip.</h3>
+            <p>Trip planning can be very complex especially if weather conditions are part of a user’s fun. Understanding Nori’s need
+            for weekly or daily confirmation about his future trip, a weather conditions notification feature would help ease
+            packing burdens and have a safer trip in the water.</p>
+          </div><!-- end column w NY text-->
+          <div>
+            <!-- NY user journey image and text -->
+            <picture>
+              <!--NY uj image -->
+              <source srcset="img/vela/vela-1200px/ny-uj-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/ny-uj-1200px.jpeg" alt="User Persona NY">
+            </picture>
+            <p>User Persona: Nori Yosaku</p>
+          </div><!-- end of NY uj image and text -->
+        </div><!-- end of NY column with text and user journey image and caption-->
+
+        <div>
+          <!--Section text-->
+          <span>Opportunities</span>
+          <h2>This was my favorite aha moment while empathizing with Aileen and Nori.</h2>
+          <p>The process of mental models and user journey maps leads to seeing opportunities for the product or illuminating a
+          business stategy. Here are a few opportunities:<br>Calendar integration<br>
+          Google maps integrations<br>
+          Sharing water trip plans to family and friends for safety<br>
+          Create a play alert<br>
+          Create a trip planner feature<br>
+          </p>
+        </div><!-- end of section text -->
+      </div><!-- end of Ideate User Journeys section-->
+
+      <div><!-- Ideate: User Task Flows section -->
+        <div>
+          <!--Section text-->
+          <span>Ideate</span>
+          <p>User Task Flows</p>
+        </div><!-- end of section text -->
+
+        <div>
+          <!-- open row w 2 AB user task flow images and captions-->
+          <div>
+            <!-- 1st AB user task flow image and caption -->
+            <picture>
+              <!--AB uf image -->
+              <source srcset="img/vela/vela-600px/ab-uf-1-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/ab-uf-1-1200px.jpeg" alt="User Task Flow AB">
+            </picture>
+            <p>Aileen's User Task FLow: Customize homescreen view</p>
+          </div><!-- end 1st AB user task flow image and caption -->
+
+          <div>
+            <!-- 2nd AB user task flow image and caption -->
+            <picture>
+              <!--AB uf image -->
+              <source srcset="img/vela/vela-600px/ab-uf-2-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/ab-uf-2-1200px.jpeg" alt="User Task Flow AB">
+            </picture>
+            <p>Aileen's User Task FLow: Create watersports play alerts</p>
+          </div><!-- end 2nd AB user task flow image and caption -->
+        </div><!-- end of open row w 2 AB user task flow images and captions-->
+
+        <div>
+          <!-- open row w NY user task flow image,captions and text block-->
+          <div>
+            <!-- NY user task flow image and caption -->
+            <picture>
+              <!--NY uf image -->
+              <source srcset="img/vela/vela-600px/ny-uf-4-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/ny-uf-4-1200px.jpeg" alt="User Task Flow NY">
+            </picture>
+            <p>Nori's User Task Flow: Plan a trip</p>
+          </div><!-- end NY user task flow image and caption -->
+        
+          <div>
+            <!--Section text-->
+            <span>User Task Flows</span>
+            <p>User task flows illustrates how a user would move through a task in an application. In this case, the personas, Aileen
+            and Nori are trying to accomplish their task in the most simple, direct path as possible.<br>            
+            The tasks shown are an exploration of Vela’s key features.<br>            
+            Customize the homescreen view<br>
+            Create watersport play alerts<br>
+            Plan a trip
+            </p>
+          </div><!-- end of section text -->
+        </div><!-- end of open row w NY user task flow image,captions and text block-->        
+      </div><!-- end of Ideate: User Task Flows section-->
+
+      <div><!-- Ideate Info Architecture Site Map Section-->
+        <div>
+          <!--Section text-->
+          <span>Ideate</span>
+          <p>Information Architecture: Site Map</p>
+        </div><!-- end of section text -->
+
+        <div><!-- Site Map text and image-->
+          <div><!-- Site map text-->
+            <h3>Site Map Version 2</h3>
+            <p>Vela’s site map has been kept simple with heirarchy given to the homepage. The next tier are familiar pages for most
+            application users.<br>          
+            After a card sort exercise with over 20 participants, feedback that pushed the site map further were: labeling of pages,
+            clarify page names and simplify the user’s account page.</p>
+          </div><!-- end of Site map text -->
+
+          <div>
+            <!-- Information Architecture image -->
+            <picture>
+              <!--site map image -->
+              <source srcset="img/vela/vela-600px/vela-sitemap-V2-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/vela-sitemap-V2-1200px.jpeg" alt="Vela Site Map">
+            </picture>
+            <p>Information Architecture: Site Map V.2</p>
+          </div><!-- end Information Architecture image -->
+        </div><!-- end Site Map text and image-->
+      </div><!-- end Ideate Info Architecture Site Map Section -->
+
+      <div><!-- KB image and text-->
+        <div>
+          <!-- KB image -->
+          <picture>
+            <source srcset="img/about-me/kb-600px.jpg" media="(max-width:767px)">
+            <img src="img/about-me/kb-1200px.jpg" alt="KB on SUP">
+          </picture>
+        </div><!-- end KB image -->
+        <div>
+          <!-- KB text-->
+          <h3>Let me share my iterative process with low-mid and high-fidelity prototypes.</h3>
+          <p>That’s me. I love playing in the water as much as the user participants I have interviewed for this application. I have
+          experienced many of the pain points with other weather apps too. Thus far, I have learned so much by empathizing with my
+          user personas, Aileen and Nori.<br>          
+          Now I will share the process from taking key features of Vela from hand sketches to mid-fidelity clickable prototype.
+          </p>
+        </div><!-- end of KB text -->
+      </div><!-- end of KB image and text -->
+
+      <div><!-- Prototype section -->
+        <span>Prototype</span>
+        <div>
+          <!-- Create Weather Play Alert text-->
+          <h3>Create Weather Play Alert</h3>
+          <p>This feature was shared by all the users during the interview phase. The ability to set weather condition preferences so
+          a user will receive an alert when optimal weather conditions align so they can go play in the water.
+          </p>
+        </div><!-- end of Create Weather Play Alert text -->
+
+        <div><!-- open row of 4 prototype images and captions,1st set -->
+          <div><!-- Image 1 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/homescreen-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/homescreen-lf-1200px.jpg" alt="Homescreen Low Fidelity">
+            </picture>
+            <p>Top and bottom navigation buttons do not clutter the map view.</p>
+          </div><!-- end Image 1 -->
+
+          <div><!-- Image 2 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/set-alert-mf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/set-alert-mf-1200px.jpg" alt="Create New Option Mid-Fidelity">
+            </picture>
+          </div><!-- end Image 2 -->
+
+          <div><!-- Image 3 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/play-alert-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/play-alert-lf-1200px.jpg" alt="Play Alert Low Fidelity">
+            </picture>
+            <p>Users can control their preferences in the modal.</p>
+          </div><!-- end Image 3 -->
+
+          <div>
+            <!-- Image 4 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/set-up-settings-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/set-up-settings-1200px.jpeg" alt="Customize Settings High Fidelity">
+            </picture>
+            <p>The user can create a new name for their alert, watersport of choice and weather conditions.</p>
+          </div><!-- end Image 4 -->      
+        </div><!-- end of open row of 4 prototype images and captions, 1st set-->
+
+        <div>
+          <!-- Customize Homepage Weather Views-->
+          <h3>Customize Homepage Weather Views</h3>
+          <p>This feature allows a user to customize their homepage screen to show only the weather conditions they care about.
+          During user interviews this was an important feature that is not available with popular applications.
+          </p>
+        </div><!-- end of Customize Homepage Weather Views -->
+
+        <div>
+          <!-- open row of 4 prototype images and captions,2nd set -->
+          <div>
+            <!-- Image 1 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/homescreen-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/homescreen-lf-1200px.jpg" alt="Homescreen Low Fidelity">
+            </picture>
+          </div><!-- end Image 1 -->
+        
+          <div>
+            <!-- Image 2 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/homescreen-custom-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/homescreen-custom-lf-1200px.jpg" alt="Customize Homescreen Low-Fidelity">
+            </picture>
+          </div><!-- end Image 2 -->
+        
+          <div>
+            <!-- Image 3 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/custom-settings-mf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/custom-settings-mf-1200px.jpg" alt="Custom View Settings Mid-Fidelity">
+            </picture>
+            <p>Users can scroll and toggle their preferences in this modal.</p>
+          </div><!-- end Image 3 -->
+        
+          <div>
+            <!-- Image 4 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/homescreen-new-settings-600px.jpeg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/homescreen-new-settings-1200px.jpeg" alt="New Homescreen Settings High Fidelity">
+            </picture>
+            <p>The homepage with views of selected conditions to display.</p>
+          </div><!-- end Image 4 -->
+        </div><!-- end of open row of 4 prototype images and captions, 2nd set-->
+
+        <div>
+          <!-- Trip Planning-->
+          <h3>Trip Planning</h3>
+          <p>This feature allows a user to repeat saved trips. Or create new trips with the ability to customize the watersport,
+          weather conditions and share with family and friends.
+          </p>
+        </div><!-- end of Customize Homepage Weather Views -->
+        
+        <div>
+          <!-- open row of 4 prototype images and captions,3rd set -->
+          <div>
+            <!-- Image 1 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/homescreen-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/homescreen-lf-1200px.jpg" alt="Homescreen Low Fidelity">
+            </picture>
+          </div><!-- end Image 1 -->
+        
+          <div>
+            <!-- Image 2 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/trip-lf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/trip-lf-1200px.jpg" alt="Trip Planning Low-Fidelity">
+            </picture>
+          </div><!-- end Image 2 -->
+        
+          <div>
+            <!-- Image 3 -->
+            <picture>
+              <source srcset="img/vela/vela-600px/new-trip-mf-600px.jpg" media="(max-width:767px)">
+              <img src="img/vela/vela-1200px/new-trip-mf-1200px.jpg" alt="New Trip Planning Mid-Fidelity">
+            </picture>
+            <p>This prototype shows a simple interface to create a new trip.</p>
+          </div><!-- end Image 3 -->
+        
+          <div>
+            <!-- Image 4 -->
+            <picture>
+              <source srcset="img\vela\vela-600px\review-trip-600px.jpeg" media="(max-width:767px)">
+              <img src="img\vela\vela-1200px\review-trip-1200px.jpeg" alt="Review Saved Trip High Fidelity">
+            </picture>
+            <p>A screen with a saved trip. It needs to ability to edit, repeat the trip or exit the screen.</p>
+          </div><!-- end Image 4 -->
+        </div><!-- end of open row of 4 prototype images and captions, 3rd set-->
+      </div><!-- end of Prototype section-->
  
-    
+      
     
     </div><!--end of Vela project-->
 
@@ -233,7 +539,7 @@
           an email?
         </p>
       <div>
-        <a href="mailto:info@karenbala.com">Email me</a>
+        <a href="mailto:info@karenbala.com" class="button contact">Email me</a>
       </div>
       <div><!-- Social Media Layout and Placeholders -->
         <a href="https://www.linkedin.com/in/karenbala/" target="_blank">
