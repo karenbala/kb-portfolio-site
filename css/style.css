@@ -1,0 +1,99 @@
+/* Colors Used:
+Base Darkest (super dark gray): #1b1b1b
+Primary (ocean blue): #005ea2
+Primary Vivid (marine blue): #0050d8
+Primary Dark (deep ocean): #1a4480
+Primary Darker (inkwell): #162e51
+Secondary Vivid (hot sauce): #cf4900
+Secondary Lightest (wispy pink): #fff2f5
+Accent (warm golden sun): #fdd835
+*/
+
+/* Font Family and sizes*/
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 100; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #1b1b1b;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-align: center
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+  font-style: italic
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+/* Viewport Size*/
+img {
+  width: 100%;
+}
+
+/* hover states at links */
+a:visited {
+  color: #1b1b1b;
+  text-decoration: underline; 
+  font-weight:400;
+}
+a:hover,a:focus {
+  color: #1b1b1b;
+  text-decoration: underline; /* Underlining when hovering over a link */
+  font-style: italic;
+  font-weight: 600;
+}
+a:active {
+    color:#cf4900;
+    font-style: italic;
+}  
+
+/* Project buttons */
+.button.project {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #162e51;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 0px;
+  border-bottom: 0px solid #162e51; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+.button.project:hover {
+  background-color: #0050d8; 
+  color: #ffffff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* Email contact button */
+.button.contact {
+  background-color: #fdd835;
+  padding: 15px;
+  color: #1b1b1b;
+  border-radius: 50px;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+.button.contact:hover {
+    color: #1b1b1b;
+    text-decoration: underline;
+}
