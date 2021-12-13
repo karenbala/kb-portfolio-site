@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Karen Bala UX Portfolio Boston</title>
+    <!-- add normalize below -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- below Poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- below setting the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body id="contact-page">
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
@@ -32,7 +41,7 @@
     </header>
 
     <!-- For the hero section -->
-    <div>
+    <div id= "hero" style="background-color:black;color:white;padding:20px;text-align:center">
       <main>
         <h1>Karen Bala</h1>
         <span>I am a UX designer based in Boston</span>
@@ -43,7 +52,7 @@
     </div>
 
     <!-- Project Talk Tuul -->
-    <div><!--open row that holds (2) columns for project -->
+    <div id="project 1"><!--open row that holds (2) columns for project -->
       <div><!--open first column (used for image) -->
         <picture>
           <source srcset="img/talk-tuul/talk-tuul-600px/tt-city-600px.jpg"
@@ -61,12 +70,12 @@
           Design thinking's iterative process allowed for multiple low fidelity
           prototypes to understand usability and design.
         </p><!-- end paragraph -->
-        <a href="talk-tuul.html">Read More</a><!-- button or link label -->
+        <a href="talk-tuul.html" class="button project">Read More</a><!-- button or link label -->
       </div><!-- end second column -->
     </div><!-- end row that holds (2) columns for project -->
 
     <!-- Project Vela -->
-    <div><!--open row that holds (2) columns for project -->
+    <div id="project"><!--open row that holds (2) columns for project -->
       <div><!--open first column (used for image) -->
         <picture>
           <source srcset="img/vela/vela-600px/vela-friends-600px.jpg"
@@ -84,7 +93,7 @@
           Early market research and user interviews were critical in the development of
           key features to differentiate Vela from other weather apps.
         </p><!-- end paragraph -->
-        <a href="vela.html">Read More</a><!-- button or link label -->
+        <a href="vela.html" class="button project">Read More</a><!-- button or link label -->
       </div><!-- end second column -->
     </div><!-- end row that holds (2) columns for project -->
 
@@ -99,7 +108,7 @@
           an email?
         </p>
       <div>
-        <a href="mailto:info@karenbala.com">Email me</a>
+        <a href="mailto:info@karenbala.com" class="button contact">Email me</a>
       </div>
       <div><!-- Social Media Layout and Placeholders -->
         <a href="https://www.linkedin.com/in/karenbala/" target="_blank">
