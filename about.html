@@ -6,19 +6,24 @@
     <!-- add normalize below -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- below Poppins font-->
+
+    <!-- IBM Plex Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Serif:wght@600&display=swap"
+      rel="stylesheet">
+
     <!-- below setting the viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
   <body id="contact-page">
     <!-- For the header -->
     <header>
       <!-- For the navigation -->
-      <div>
-        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="container">
+        <svg class="logo" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_48_2)">
           <rect width="150" height="150" rx="30" fill="#1B1B1B"/>
           <path d="M67.2716 104.75C64.5716 104.75 63.0466 103.75 62.6966 101.75C61.4966 96.2 59.4216 91.575 56.4716 87.875C53.5716 84.125 49.3966 80.775 43.9466 77.825L35.8466 84.5V100.775C35.8466 101.975 35.4466 102.95 34.6466 103.7C33.8966 104.4 32.8716 104.75 31.5716 104.75C30.2716 104.75 29.2216 104.4 28.4216 103.7C27.6716 103 27.2966 102.025 27.2966 100.775V54.725C27.2966 53.475 27.6716 52.5 28.4216 51.8C29.2216 51.1 30.2716 50.75 31.5716 50.75C32.8716 50.75 33.8966 51.125 34.6466 51.875C35.4466 52.575 35.8466 53.525 35.8466 54.725V75.125L62.5466 51.95C63.2966 51.25 64.1716 50.9 65.1716 50.9C66.2716 50.9 67.1716 51.3 67.8716 52.1C68.6716 52.9 69.0716 53.75 69.0716 54.65C69.0716 55.65 68.5716 56.55 67.5716 57.35L49.4216 73.175C55.5716 76.225 60.4466 80.1 64.0466 84.8C67.6466 89.5 69.8466 94.725 70.6466 100.475C70.7966 101.575 70.5216 102.55 69.8216 103.4C69.1716 104.25 68.3216 104.7 67.2716 104.75ZM93.4021 104C89.8521 104 87.0771 103.075 85.0771 101.225C83.1271 99.325 82.1521 96.7 82.1521 93.35V61.925C82.1521 58.675 83.1021 56.125 85.0021 54.275C86.9021 52.425 89.5521 51.5 92.9521 51.5H110.427C115.977 51.5 120.277 52.75 123.327 55.25C126.377 57.7 127.902 61.225 127.902 65.825C127.902 68.225 127.227 70.4 125.877 72.35C124.527 74.3 122.727 75.775 120.477 76.775V76.925C122.977 77.875 124.977 79.375 126.477 81.425C128.027 83.475 128.802 85.75 128.802 88.25C128.802 93.15 127.252 97 124.152 99.8C121.052 102.6 116.777 104 111.327 104H93.4021ZM110.652 73.775C113.302 73.775 115.402 73.075 116.952 71.675C118.502 70.275 119.277 68.35 119.277 65.9C119.277 60.75 116.327 58.175 110.427 58.175H94.0771C92.9771 58.175 92.1021 58.525 91.4521 59.225C90.8521 59.925 90.5521 60.875 90.5521 62.075V73.775H110.652ZM110.652 97.325C117.002 97.325 120.177 94.35 120.177 88.4C120.177 85.85 119.327 83.875 117.627 82.475C115.927 81.025 113.602 80.3 110.652 80.3H90.5521V93.425C90.5521 94.625 90.8521 95.575 91.4521 96.275C92.1021 96.975 92.9771 97.325 94.0771 97.325H110.652Z" fill="white"/>
@@ -31,8 +36,8 @@
           </defs>
           </svg>
         <nav>
-         <ul>
-          <li><a href="index.html">Work</a></li>
+         <ul class="navigation">
+          <li><a href="index.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
          </ul>
@@ -40,33 +45,35 @@
       </div>
     </header>
 
-    <div>
-      <main style="background-color:#cf4900;color:#1b1b1b;padding:20px">
+    <main>
+      <div id="welcome" >
       <!-- Title Page -->
-        <h1>Welcome, I am Karen Bala.</h1>
-      </main>
-      <div><!-- KB image -->
+        <p>Hi, thanks for stopping by my about page. Stick around; I will share a few things about myself.</p>
+      </div>
+
+      <div class="kb-image"><!-- KB image -->
         <picture>
           <source srcset="img/about-me/kb-600px.jpg"
             media="(max-width:767px)">
           <img src="img/about-me/kb-1200px.jpg" alt="Karen Bala UX Designer">
         </picture>
       </div><!-- end of KB image -->
+
       <div id="mystory"><!-- My Story in Text -->
-        <h2>My Story</h2>
-        <p>I am a UX designer with a background in architecture.</p>
-        <p>What has been my professional journey?<br>
-        I studied architecture at the University of Florida with a focus on design theory.  Those formative years taught me to research, think and share conceptual ideas with my colleagues. I am still using these critical tools today.   
-	      Years in professional practice honed my collaborative approach with team members and clients. Aligning a client’s business goals with a well-designed product for their end-users creates a powerful solution for most businesses to succeed.
-        </p>
-        <p>Where am I if I am not in front of my computer?<br>
+        <div class="container">
+          <h4>My Story</h4>
+          <p>I am a UX designer with a background in architecture.</p>
+          <p>I studied architecture at the University of Florida with a focus on design theory.  Those formative years taught me to research, think and share conceptual ideas with my colleagues. I am still using these critical tools today.</p>   
+	        <p>Years in professional practice honed my collaborative approach with team members and clients. Aligning a client’s business goals with a well-designed product for their end-users creates a powerful solution for most businesses to succeed.</p>
+          <p>If I am not in front of my computer, you can find me in the ocean.
           I have a strong love for being in the water, either ocean swimming, paddleboarding, or sea kayaking, especially on the Maine coast. I have had a long journey to get into the water. I started learning how to swim as an adult in a short-length pool at the 23rd Street Y in New York City, which is not easy, but the joy that the ocean brings me was worth busting through the fear.
-        </p>
-        <a target="blank" href="files/kb-resume.pdf" class="button"> View Resume </a>
+          </p>
+          <a target="blank" href="files/kb-resume.pdf" class="button"> View Resume </a>
+        </div>
       </div><!-- End of My Story Text -->
       <div><!-- Frist Column Relevant Skills-->
-        <h2>Skills and Tools</h2>
-        <h4>Relevant Skills</h4>
+        <h4>Skills and Tools</h4>
+        <h5>Relevant Skills</h5>
         <ul>
           <li>User Experience</li>
           <li>Front End Development</li>
@@ -74,7 +81,7 @@
         </ul>
       </div>
       <div><!--Second Column Tools I Use -->
-        <h4>Tools I Use</h4>
+        <h5>Tools I Use</h5>
         <ul>
           <li>Handsketching</li>
           <li>Figma</li>
@@ -83,12 +90,12 @@
           <li>Adobe Creative Suite</li>
         </ul>
       </div>
-    </div>
+    </main>
 
     <!--For the footer -->
     <footer id="contact">
-      <div><!-- Footer text -->
-        <h2>Get in Touch</h2>
+      <div class="container-footer"><!-- Footer text -->
+        <h3>Get in Touch</h3>
         <p>
           Do you like my work and want to discuss opportunities? Please get in touch.
           Call: <a href="tel:+011234567890">+01 1234567890</a> or Skype
@@ -98,7 +105,7 @@
       <div>
         <a href="mailto:info@karenbala.com" class="button contact">Email me</a>
       </div>
-      <div><!-- Social Media Layout and Placeholders -->
+      <div class="sm-img"><!-- Social Media Layout and Placeholders -->
         <a href="https://www.linkedin.com/in/karenbala/" target="_blank">
           <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/>
