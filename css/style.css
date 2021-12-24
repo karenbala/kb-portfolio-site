@@ -86,26 +86,7 @@ img {
 }
 
 
-/* Project buttons */
-.button.project {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #162e51;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 15px;
-  border-radius: 0px;
-  border-bottom: 0px solid #162e51; /* width of the border, type, color */
-  transition: 0.2s opacity;
-  text-decoration: none;
-}
-.button.project:hover {
-  background-color: #0050d8; 
-  color: #ffffff;
-  text-decoration: underline;
-  font-style: italic;
-}
-
-/* Layout Styling task 1.7 */
+/* Layout Styling */
 /* Padding on entire page */
 .container {
   padding: 0 10px;
@@ -129,11 +110,14 @@ header {
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 99px;
 }
 
 /* Removes the bullet points from unordered lists at nav bar */
 
+nav >ul {
+  padding-left: 0px;
+}
 nav > ul > li {
   list-style-type: none;
   padding: 0 10px;
@@ -141,7 +125,7 @@ nav > ul > li {
   font-weight: 600;
   display: inline-block;
   text-transform: uppercase;
-  
+    
 }
 /* hover states at navigation links */
 nav > ul > li > a:visited {
@@ -163,7 +147,7 @@ nav > ul > li > a:active {
 #hero {
   background-color: #fff2f5;
   padding: 15px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
   text-align: center;
 }
@@ -172,51 +156,147 @@ nav > ul > li > a:active {
   margin: 8px 0; /* 25px top and bottom, 0 left and right */
 }
 
-/* Styling at project work */
+/* Styling and columns at project work */
 .container-project .row { 
   padding-bottom: 16px;   
   width: 100%; 
+  padding-left: 20px;
+}
+.container-project-animation .row { 
+  padding-bottom: 16px;   
+  width: 100%; 
+  padding-left: 20px;
 }
 
-.container-project {
+.container-mystory .row { 
+  padding-bottom: 16px;   
+  width: 100%; 
+  padding-left: 20px;
+}
+
+.container-my-skills .row { 
+  padding-bottom: 16px;   
+  width: 100%; 
+  padding-left: 20px;
+}
+.container-project  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  border-bottom: 1px solid #1b1b1b;
+}
+.container-project-animation  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  border-bottom: 1px solid #1b1b1b;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.container-mystory  {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
   border-bottom: 1px solid #1b1b1b;
 }
 
-.col-mobile-100perc {
-	width: 100%;
-}
-
-.col-mobile-50perc {
-	width: 50%;
+.container-my-skills  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  border-bottom: 1px solid #1b1b1b;
 }
 
 img {
 	width: 100%;
 }
-
-
-.desc {
-	padding: 0 20px;	
+svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-@media screen and (min-width: 700px) {
-  .container-project {
-		flex-direction: row;
-		align-items: flex-start;
-	}
-	
-	.col-desktop-100perc {
-		width: 100%;
-	}
 
-	.col-desktop-50perc {
-		width: 50%;
-	}
+
+/* Project Work buttons */
+.button.project {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #162e51;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 0px;
+  border-bottom: 0px solid #162e51; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+.button.project:hover {
+  background-color: #0050d8; 
+  color: #ffffff;
+  text-decoration: underline;
+  font-style: italic;
+  opacity: 0.8;
 }
 
+/* Animation Fun */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.big-sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes sun-move {
+  from {transform: translate(0,0px);}
+  to {transform: translate(1200px,400px);}  
+}
+.md-sun {
+  animation-duration: 20s;
+  animation-name: sun-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes planet-move {
+  from {transform: translate(0,0px);}
+  to {transform: translate(45px,-200px);}  
+}
+@keyframes planet-move-2 {
+  from {transform: translate(0,0px);}
+  to {transform: translate(-100px,-250px);}  
+}
+.tiny-planet {
+  animation-duration: 10s;
+  animation-name: planet-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.tiny-planet-2 {
+  animation-duration: 15s;
+  animation-name: planet-move-2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes lunar-move {
+  from {transform: translate(0,0px);}
+  to {transform: translate(300px,-100px);}  
+}
+.lunar-rocket {
+  animation-duration: 15s;
+  animation-name: lunar-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
 /* welcome section,about.html */
 #welcome {
@@ -230,19 +310,6 @@ img {
   width: 100%;
   padding-top:50px;
   text-align: center;
-}
-
-#mystory {
-  background-color: #f0f0f0 ;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #1b1b1b;
-}
-
-.kbimage {
-  max-width: 50%;
-  height: auto; 
-  margin: auto;
 }
 
 /* Footer Section */
@@ -269,4 +336,81 @@ img {
 .button.contact:hover {
     color: #1b1b1b;
     text-decoration: underline;
+}
+
+/* Media Queries for small to x-large deviceds */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .container-project {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+  .container-project-animation {
+		flex-direction: row;
+		align-items: flex-start;
+  }
+	  .container-mystory {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+  .container-my-skills {
+		flex-direction: row;
+		align-items: flex-start;    
+	}
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container-project {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .container-project-animation {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-mystory {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-my-skills {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-7 {
+    width: 58.33%
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
