@@ -101,13 +101,53 @@ img {
 }
 header {
   background-color: #fff2f5;
-  text-align: center;
-  padding: 10px 0;
+  padding: 12px 0 4px 0;
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   position: fixed;
   display: inline-block;
   width: 100%;
 }
+
+/* Navigation items are hidden except menu icon for screens less than 640px, small screens */
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+/* Menu bar's position is relative to the logo. navtoggle.responsive is a new class for later javascript work */
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* Menu bar */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  padding-right: 0;
+  color: #1b1b1b;
+}
+
+/* Will override when responsive class is toggled */
+.navtoggle.responsive li  {
+  display: block;
+}
+
+/* Styling for menu icon when toggled */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1.5px dotted #1b1b1b;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 main {
   padding-top: 99px;
@@ -116,14 +156,15 @@ main {
 /* Removes the bullet points from unordered lists at nav bar */
 
 nav >ul {
+  list-style-type: none;
   padding-left: 0px;
+  margin: 0;
 }
 nav > ul > li {
   list-style-type: none;
   padding: 0 10px;
   font-size: 1.125em;
   font-weight: 600;
-  display: inline-block;
   text-transform: uppercase;
     
 }
@@ -146,7 +187,7 @@ nav > ul > li > a:active {
 /* hero section,index.html */
 #hero {
   background-color: #fff2f5;
-  padding: 15px 0;
+  padding: 15px 15px;
   display: block;
   width: 100%;
   text-align: center;
@@ -351,6 +392,7 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+    display: inline-block;
   }
   .container-project {
 		flex-direction: row;
@@ -371,46 +413,73 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-}
+  /* Removes menu icon and lists navigation items for larger than 640px*/
+  .navtoggle li:not(:last-child) { 
+  display: inline-block;
+  }
+  /* Removes menu icon for screens larger than 640px */
+  .navtoggle li:last-child {
+  display: none;
+  }
+  nav > ul {
+  margin: 1em 0;
+  }
+  .navtoggle.responsive li  {
+    border-top: 0;
+  }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .center {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
   .container-project {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
   .container-project-animation {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 .container-mystory {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 .container-my-skills {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 .container-footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
   .col-lg-5 {
     width: 41.66%;
   }
   .col-lg-7 {
     width: 58.33%
   }
-}
+  /* Removes menu icon and lists navigation items for larger than 640px*/
+  .navtoggle li:not(:last-child) { 
+  display: inline-block;
+  }
+  /* Removes menu icon for screens larger than 640px */
+  .navtoggle li:last-child {
+  display: none;
+  }
+  nav > ul {
+  margin: 1em 0;
+  }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px)
