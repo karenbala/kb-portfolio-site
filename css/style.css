@@ -12,14 +12,22 @@ Secondary Lighter (HubbaBubba): #f8b9c5
 Secondary Lightest (wispy pink): #fff2f5
 Update to Secondary Lightest: fce1e0
 Accent (warm golden sun): #fdd835
+
+Base Darker: #3f3f3f
+Base Dark: #7e7e7e
+Base Light Putty Gray Gainsboro: #dddddd
+Lighter Putty Gray: #f1f1f1
+
+
 */
 
-/* Applied to all html elements, border-box */
+/*------------ Applied to all html elements ---------------*/
 *{
   box-sizing: border-box;
 }
 
-/* Font Family and sizes*/
+
+/* ---------------Font Family and sizes ---------------------*/
 body {
   background-color: #ffffff;
   font-family: 'Lora', serif;
@@ -83,12 +91,9 @@ s2 {
   font-size: 1em;
   font-weight: bold;
 }
-/* Text hightlight at hero section */
-.simple-highlight{
- background-color: #fce1e0;
- padding:0.1em 0.2em;
- color: #1b1b1b;
- font-weight: 600;
+/* ------Text hightlight------- */
+.simple-italics{
+ font-style: italic;
 }
 
 /* Viewport Size*/
@@ -104,14 +109,14 @@ img {
   margin: 0 auto;  
 }
 
-/* Navigation bar elements */
+/* ---------- Navigation bar elements -------------------- */
 
 .logo {
   max-width: 125px;
   max-height: 150px;
 }
 header {
-  background-color: #fff2f5;
+  background-color: #dddddd;
   padding: 12px 0 4px 0;
   position: fixed;
   display: inline-block;
@@ -139,7 +144,7 @@ header {
   top: 20px;
   font-size: 24px;
   padding-right: 10px;
-  color: #1b1b1b;
+  color: #000000;
 }
 
 /* Will override when responsive class is toggled */
@@ -154,7 +159,7 @@ header {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1.5px dotted #1b1b1b;
+  border-top: 1.5px dotted #000000;
 }
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
@@ -163,6 +168,7 @@ header {
 
 main {
   padding-top: 75px;
+  
 }
 
 /* Removes the bullet points from unordered lists at nav bar */
@@ -171,35 +177,41 @@ nav >ul {
   list-style-type: none;
   padding-left: 0px;
   margin: 0;
+  text-decoration: none;
 }
-nav > ul > li {
+nav > ul > li> a {
   list-style-type: none;
   padding: 0 10px;
   font-family: 'Montserrat', sans-serif;
+  color: #000000;
   font-size: 1.125em;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0;
+  text-decoration: none;
     
 }
-/* hover states at navigation links */
+/* --------Pseudo classes hover states at navigation links */
 nav > ul > li > a:visited {
-  color: #1b1b1b;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
-nav > ul > li > a:hover,a:focus {
-  color: #1b1b1b;
-  text-decoration: underline; /* Underlining when hovering over a link */
+nav > ul > li > a:hover {
+  color: #000000;
+   /* Underlining when hovering over a link */
   font-style: italic;
   font-weight: 700;
+  text-decoration: underline;
 }
-nav > ul > li > a:active {
-    background-color:#cf4900;
+nav > ul > li > a:active {    
     font-style: italic;
     padding:0.1em 0.2em;
+    text-decoration: underline;
 }  
-/* hero section,index.html */
+
+
+/* ---------- Hero section,index.html ------------ */
 #hero {
-  background-color: #fff2f5;
+  background-color: #dddddd;
   padding: 15px 15px;
   display: block;
   width: 100%;
@@ -282,7 +294,7 @@ svg {
 /* Project Work buttons */
 .button.project {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #1b1b1b;
+  background-color: #3f3f3f;
   color: #ffffff; /* needed to override the default link color */
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -299,7 +311,7 @@ svg {
 /*-----About Resume Button -------- */
 .button.resume {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #1b1b1b;
+  background-color: #3f3f3f;
   color: #ffffff; /* needed to override the default link color */
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -314,8 +326,8 @@ svg {
 }
 /* welcome section,about.html */
 #welcome {
-  background-color: #fff2f5;
-  color: #1b1b1b;
+  background-color: #dddddd;
+  color: #000000;
   font-size: 1.125em;
   font-weight: 100;
   padding: 15px;
@@ -334,7 +346,7 @@ svg {
 }
 /* Vela welcome banner and image of Vela friends */
 .vela-welcome {
-  background-color: #1b1b1b;
+  background-color: #3f3f3f;
   color: #ffffff;
   text-align: center;
   padding-top: 20px;
@@ -371,7 +383,9 @@ svg {
 	align-items: center;
   
 }
-.column-left-image {
+TODO add figure margin to zero
+.column-left-image { 
+  
   margin: 0;
   max-width: 100%;
   height: auto;
@@ -468,9 +482,9 @@ svg {
 
 
 
-/* Footer Section */
+/* --------------------- Footer Section  -----------------*/
 .container-footer {
-  background-color: #f0f0f0;
+  background-color: #dddddd;
   padding: 10px 10px;
 }
 .sm-img {
@@ -681,13 +695,13 @@ Large devices (1024px or larger)
   margin-right: 25%;
 }
 .column-left-image {
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 .column-right-image {
-  max-width: 40%;
+  max-width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
