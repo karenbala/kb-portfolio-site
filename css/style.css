@@ -13,10 +13,12 @@ Secondary Lightest (wispy pink): #fff2f5
 Update to Secondary Lightest: fce1e0
 Accent (warm golden sun): #fdd835
 
+Base Darkest: #1f1f1f
 Base Darker: #3f3f3f
 Base Dark: #7e7e7e
 Base Light Putty Gray Gainsboro: #dddddd
 Lighter Putty Gray: #f1f1f1
+
 
 
 */
@@ -25,15 +27,15 @@ Lighter Putty Gray: #f1f1f1
 *{
   box-sizing: border-box;
 }
-
+TODO COLOR CHECK COLOR PALETTE
 
 /* ---------------Font Family and sizes ---------------------*/
 body {
   background-color: #ffffff;
   font-family: 'Lora', serif;
-  font-size: 1em; /* Sets the font size to 16px */
-  font-weight: 400; /* Sets the font weight to 300 */
-  line-height: 1.5em; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 1.0625em; /* Sets the font size to 17px */
+  font-weight: 400; /* Sets the font weight to 400 */
+  line-height: 1.8; /* Sets the line-height to 1.6 * the font-size */
   color: #1b1b1b;
     
 }
@@ -367,8 +369,9 @@ svg {
   margin-right: auto;
   width: 75%;
 }
-/*----------------------Project Goals----------------*/
 
+
+/*----------------------Project Goals----------------*/
 .proj-goals-text {
   text-align: left;
   margin-top: 24px;
@@ -383,9 +386,8 @@ svg {
 	align-items: center;
   
 }
-TODO add figure margin to zero
-.column-left-image { 
-  
+
+.column-left-image {   
   margin: 0;
   max-width: 100%;
   height: auto;
@@ -413,99 +415,102 @@ TODO add figure margin to zero
   font-family: 'Montserrat', sans-serif;
   background-color:#3d4551;
   color:#ffffff;
-  font-size: 1.em;
+  font-size: 1.0em;
   text-align: center;
   width: 250px;
   line-height: 44px;
   height: 44px;
   margin-left: 16px;
-  
+}
+/*----Three Column Text --------*/
+.three-col-text {
+  display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+
+}
+.col-text {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }	
 }
 
-/* Animation Fun */
+/* ---------- Animation Fun------------- */
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
-.big-sun {
+.sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-@keyframes sun-move {
-  from {transform: translate(0,0px);}
-  to {transform: translate(1200px,400px);}  
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
 }
-.md-sun {
-  animation-duration: 20s;
-  animation-name: sun-move;
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-@keyframes planet-move {
-  from {transform: translate(0,0px);}
-  to {transform: translate(45px,-200px);}  
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
-@keyframes planet-move-2 {
-  from {transform: translate(0,0px);}
-  to {transform: translate(-100px,-250px);}  
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
-.tiny-planet {
-  animation-duration: 10s;
-  animation-name: planet-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-.tiny-planet-2 {
-  animation-duration: 15s;
-  animation-name: planet-move-2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes lunar-move {
-  from {transform: translate(0,0px);}
-  to {transform: translate(300px,-100px);}  
-}
-.lunar-rocket {
-  animation-duration: 15s;
-  animation-name: lunar-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-
 /* --------------------- Footer Section  -----------------*/
 .container-footer {
   background-color: #dddddd;
   padding: 10px 10px;
 }
+ .footer-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
 .sm-img {
   max-width: 24px;
-  max-height: 24px;
   display: inline-block;  
   width: 100%; 
   padding-top: 20px; 
 }
+
 /* Email contact button */
+.email-button {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
 .button.contact {
-  background-color: #fdd835;  
+  background-color: #fdd835; 
+  font-family: 'Montserrat', sans-serif; 
   padding: 10px 15px;  
   color: #1b1b1b;
-  border-radius: 0px;
-  transition: 0.2s opacity;
-  text-decoration: none;
+  text-decoration: none;  
+  margin: 0;  
+  
 }
 .button.contact:hover {
-    color: #1b1b1b;
+    color: #000000;
     text-decoration: underline;
+    font-style: italic;
 }
 
 /*------- Media Queries for small to x-large devices---- */
@@ -538,7 +543,11 @@ Small devices (smaller than 640px)
     border-bottom: 1px solid #1b1b1b;
     width: 100%;
     }
-  
+  .three-col-text .col-text{
+    flex-basis: 100%;
+		margin: 0 0 5px 0;
+  }
+   
 }
 
 /* ==============================
@@ -562,39 +571,49 @@ Medium devices (640px and larger)
     margin-right: auto;
     width: 50%;
   }
+
   .container-project {
 		flex-direction: row;
 		align-items: flex-start;
 	}
+
   .container-project-animation {
 		flex-direction: row;
 		align-items: flex-start;
   }
+
 	  .container-mystory {
 		flex-direction: row;
 		align-items: flex-start;
 	}
+  
   .container-my-skills {
 		flex-direction: row;
 		align-items: flex-start;    
 	}
+
   .col-md-6 {
     width: 50%;
   }
+
   /* Removes menu icon and lists navigation items for larger than 640px*/
   .navtoggle li:not(:last-child) { 
   display: inline-block;
   }
+
   /* Removes menu icon for screens larger than 640px */
   .navtoggle li:last-child {
   display: none;
   }
+
   nav > ul {
   margin: 1em 0;
   }
+
   .navtoggle.responsive li  {
     border-top: 0;
   }
+
   /*----------Vela Media Queries-------------------*/
   /* Sets the max-width of text for larger screens */
   .vela-welcome-intro {
@@ -602,10 +621,24 @@ Medium devices (640px and larger)
   margin-right: auto;
   width: 50%;
   }
-/* Changes the text size for larger screens */
-.proj-goals-text {
-  font-size: 1.25em;
+
+  /* Changes the text size for larger screens */
+  .proj-goals-text {
+    font-size: 1.25em;
   }
+  
+  .three-col-text .col-text {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+  }
+  
 }
 
 /* ==============================
@@ -755,8 +788,9 @@ X-large devices (1440px or larger)
   margin-right: auto;  
   }
   .process-tags {
-    max-width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   }
 }
+
