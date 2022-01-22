@@ -425,22 +425,15 @@ svg {
 /*----Three Column Text --------*/
 .three-col-text {
   display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
+  flex-flow: row wrap;
 
 }
 .col-text {
-	flex: 1;
-	border: 1px solid gray;
+	flex: 1 ;  
 	margin: 2px;
-	padding: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }	
+	padding: 10px;	
 }
+
 
 /* ---------- Animation Fun------------- */
 @keyframes color-change {
@@ -563,7 +556,7 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-    display: inline-block;
+    
   }
 
   .hero-text{
@@ -627,17 +620,7 @@ Medium devices (640px and larger)
     font-size: 1.25em;
   }
   
-  .three-col-text .col-text {
-		margin-bottom: 5px;
-    flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-  }
+ 
   
 }
 
@@ -713,12 +696,12 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 .flex-container-project-goals {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 /* Changes the text size for larger screens */
 .proj-goals-text {
   font-size: 1.25em;
@@ -726,23 +709,27 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: 25%;
   margin-right: 25%;
-}
+  }
 .column-left-image {
   max-width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 .column-right-image {
   max-width: 50%;
   height: auto;
   margin-left: auto;
+  margin-right: auto;  
+  }
+.three-col-text {
+  max-width: 1200px;
+  margin-left: auto;
   margin-right: auto;
-  
-}
+  }
+
 
 }
-
 
 
 /* ==============================
@@ -788,6 +775,11 @@ X-large devices (1440px or larger)
   margin-right: auto;  
   }
   .process-tags {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .three-col-text {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
