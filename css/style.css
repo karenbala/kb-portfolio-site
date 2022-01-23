@@ -27,7 +27,6 @@ Lighter Putty Gray: #f1f1f1
 *{
   box-sizing: border-box;
 }
-TODO COLOR CHECK COLOR PALETTE
 
 /* ---------------Font Family and sizes ---------------------*/
 body {
@@ -52,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.0em;
   font-weight: 400;
 }
 
@@ -108,7 +107,8 @@ img {
 /* Padding on entire page */
 .container {
   padding: 0 15px;
-  margin: 0 auto;  
+  margin: 0 auto; 
+  
 }
 
 /* ---------- Navigation bar elements -------------------- */
@@ -345,6 +345,7 @@ svg {
   padding: 0 0px;
   padding-top: 108px;
   margin: 0 auto; 
+  
 }
 /* Vela welcome banner and image of Vela friends */
 .vela-welcome {
@@ -380,7 +381,7 @@ svg {
   margin-right: 15%;
 }
 .flex-container-project-goals  {
-	background-color:#f0f0f0 ;
+	background-color:#f1f1f1 ;
   display: flex;
   flex-direction: row;
 	align-items: center;
@@ -405,27 +406,35 @@ svg {
 .competition-quote {
   color:#cf4900;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.75em;
+  font-style: italic;
+  font-size: 1.5em;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 /*-----------------------The Define:User Research Space----------------*/
 .process-tags {
-  font-family: 'Montserrat', sans-serif;
-  background-color:#3d4551;
-  color:#ffffff;
-  font-size: 1.0em;
-  text-align: center;
-  width: 250px;
-  line-height: 44px;
-  height: 44px;
-  margin-left: 16px;
+  font-family: 'Montserrat', sans-serif;  
+  font-size: 1em;
+  text-align: left;
+  line-height: 40px;
+  height: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: 24px;
+  
+  background-color: #ffffff;
+  color: #1b1b1b;
+  font-weight: bold;
+  border-bottom: 1px solid #1b1b1b;
+  width: 100%;
+  
 }
 /*----Three Column Text --------*/
 .three-col-text {
   display: flex;
   flex-flow: row wrap;
+  background-color: #f1f1f1;
 
 }
 .col-text {
@@ -433,6 +442,29 @@ svg {
 	margin: 2px;
 	padding: 10px;	
 }
+/*--------Prototype -------------------*/
+
+/* Four Column Images --------------*/
+.four-col-images {
+  display: flex;
+  flex-flow: row wrap;
+}
+.col-image {
+  flex: 1 ;  
+	margin: 2px;
+	padding: 10px;
+}
+
+/*--------Preference Test --------*/
+.five-col-image {
+  background-color: #dddddd;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; 
+  
+}
+
+
 
 
 /* ---------- Animation Fun------------- */
@@ -540,7 +572,14 @@ Small devices (smaller than 640px)
     flex-basis: 100%;
 		margin: 0 0 5px 0;
   }
-   
+  .four-col-images .col-image{
+    flex-basis: 100%;
+		margin: 0 0 5px 0;
+  }
+  .five-col-image .col-image{
+    flex-basis: 100%;
+		margin: 0 0 5px 0;
+  }
 }
 
 /* ==============================
@@ -702,6 +741,11 @@ Large devices (1024px or larger)
   margin-left: auto;
   margin-right: auto;
   }
+  .process-tags {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 /* Changes the text size for larger screens */
 .proj-goals-text {
   font-size: 1.25em;
@@ -723,6 +767,16 @@ Large devices (1024px or larger)
   margin-right: auto;  
   }
 .three-col-text {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .four-col-images{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .five-col-image {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -749,26 +803,26 @@ X-large devices (1440px or larger)
   margin-left: auto;
   margin-right: auto;
   }
-.flex-container-project-goals {
+  .flex-container-project-goals {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   }
 /* Changes the text size for larger screens */
-.proj-goals-text {
+  .proj-goals-text {
   font-size: 1.5em;
   line-height: 1.75em;
   max-width: 1200px;
   margin-left: 30%;
   margin-right: 25%;
   }
-.column-left-image {
+  .column-left-image {
   max-width: 40%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   }
-.column-right-image {
+  .column-right-image {
   max-width: 40%;
   height: auto;
   margin-left: auto;
@@ -780,6 +834,16 @@ X-large devices (1440px or larger)
   margin-right: auto;
   }
   .three-col-text {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .four-col-images{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .five-col-image {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
